@@ -1,0 +1,24 @@
+.ui-header {
+  position: relative;
+
+  &--wrapper {
+    background-color: $GRAY_LIGHT;
+    padding: 2rem 0 4rem 0;
+  }
+  &--title {
+    font-size: 7.2rem;
+  }
+  &--subtitle {
+    font-size: 1.8rem;
+  }
+  &--nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    li,
+    a {
+      font-size: 2rem;
+    }
+  }
+}
