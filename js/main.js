@@ -23,8 +23,8 @@ function generateUIList() {
 
   var uiStr = '';
   for (var i = 0; i < NUM_UIS; i++) {
-    // Implicit type conversion used to stringify number
-    uiStr = ('0' + i) + '_' + IMAGE_NAME_SUFFIX + '.' + IMAGE_TYPE;
+    // Implicit type conversion used to stringify numberk
+    uiStr = (i + '0').substring(0,2).split('').reverse().join('') + '_' + IMAGE_NAME_SUFFIX + '.' + IMAGE_TYPE;
     res.push(uiStr);
   }
 

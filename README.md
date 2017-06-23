@@ -12,7 +12,8 @@ Note that I'm not directly affiliated with the planning or running of the actual
 ### Things you'll need
 * A GitHub account
 * Git installed locally
-* A folder with all your UIs, listed like `00_LastName.jpg`, `01_LastName.jpg`, .... Most common image types are supported. For speed purposes, it might help to have images that aren't too large (not greater than 1000 x 1000)
+* A folder with all your UIs, listed like `00_LastName.jpg`, `01_LastName.jpg`, ....
+* Most common image types are supported. For speed purposes, it might help to have images that aren't too large (not greater than 1000 x 1000)
 * 10-20 minutes
 
 ### Setup
