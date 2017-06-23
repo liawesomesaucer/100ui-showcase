@@ -9,7 +9,8 @@ $(document).ready(function() {
   $(tileBtnId).click(renderTiles);
   $(listBtnId).click(renderList);
 
-  renderList();
+  // Change to renderList() if you want a default one-column layout
+  renderTiles();
 
   $('#ui-num-days').text(NUM_UIS);
 });

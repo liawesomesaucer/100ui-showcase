@@ -25,7 +25,7 @@ Let's clone (download) the files (run these in your terminal)
 git clone https://github.com/<YOUR_GITHUB_USERNAME>/100ui-showcase.git
 cd 100ui-showcase
 ```
-(Remember to replace <YOUR_GITHUB_USERNAME> with your Github username. If I ran it, i'd run `git clone https://github.com/liawesomesaucer/100ui-showcase.git`)
+(Remember to replace `<YOUR_GITHUB_USERNAME>` with your Github username. If I ran it, i'd run `git clone https://github.com/liawesomesaucer/100ui-showcase.git`)
 
 #### Making your modifications
 With a file explorer, look in `100ui-showcase/images/uis`. You'll see some sample images. You want to replace the folder `uis` with your folder of UI designs. After deleting the old `uis` folder, rename your new folder to `uis`.
