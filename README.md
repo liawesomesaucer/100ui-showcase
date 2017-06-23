@@ -42,10 +42,10 @@ git push origin master
 * This may prompt you for credentials, so you might need to enter those
 
 #### Finally, let's use gh-pages to showcase our work!
-* Head back to your fork on GitHub (github.com/<YOUR_GITHUB_USERNAME>/100ui-showcase)
+* Head back to your fork on GitHub (`github.com/<YOUR_GITHUB_USERNAME>/100ui-showcase`)
 * Click 'Settings'.
-* Scroll down to 'GitHub Pages' > 'Source' and select 'master branch'. Don't worry about themes or anything.
-* Head over to <YOUR_GITHUB_USERNAME>.github.io/100ui-showcase to see your awesome work!
+* Scroll down to 'GitHub Pages' > 'Source' and select 'master branch' and Save. Don't worry about themes or anything.
+* Head over to `<YOUR_GITHUB_USERNAME>.github.io/100ui-showcase` to see your awesome work!
 
 ## Development
 Using gulp, so let's set that up.
