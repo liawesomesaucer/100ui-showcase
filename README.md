@@ -1,6 +1,13 @@
 # A lightweight showcase for the DailyUI Challenge
 
-## Getting your own version up
+This is a lightweight showcasing site for the 100 Day Daily UI challenge [dailyui.co](www.dailyui.co). This tool aims to create an easy way for participants to exhibit their work.
+
+See example [here](http://liawesomesaucer.github.io/100ui-showcase).
+* This currently running example images from the dailyui.co site but those will be updated as I do the challenge myself
+
+Note that I'm not directly affiliated with the planning or running of the actual Daily UI Challenge
+
+## Getting your own version of this up and running
 
 ### Things you'll need
 * A GitHub account
@@ -30,7 +37,8 @@ Go ahead and open `100ui-showcase/index.html` in your browser and double-check t
 * If you run into any issues, double check that you've completed all the steps so far correctly, or reach out to someone for help.
 * Also make sure the `config.js` is edited properly to match your files.
 
-Now would also be a good time to make any HTML/CSS changes needed to make your version of this showcase stand out. Make sure to change the name to your own!
+Now would also be a good time to make any content changes needed to make your version of this showcase stand out. Make sure to change the name to your own!
+* For CSS changes (through SASS), head to the [developers](#developers) setup with Gulp.
 
 #### Deploying your files
 Let's make a commit and push your files. Run this in your terminal:
@@ -41,13 +49,15 @@ git push origin master
 ```
 * This may prompt you for credentials, so you might need to enter those
 
-#### Finally, let's use gh-pages to showcase our work!
+#### Using gh-pages to showcase our work!
 * Head back to your fork on GitHub (`github.com/<YOUR_GITHUB_USERNAME>/100ui-showcase`)
 * Click 'Settings'.
 * Scroll down to 'GitHub Pages' > 'Source' and select 'master branch' and Save. Don't worry about themes or anything.
 * Head over to `<YOUR_GITHUB_USERNAME>.github.io/100ui-showcase` to see your awesome work!
 
-## Development
+## Developers
+If you want to tinker with this, here's how.
+
 Using gulp, so let's set that up.
 
 ```
