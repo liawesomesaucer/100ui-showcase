@@ -13,6 +13,6 @@ var IMAGE_TYPE = 'png';
 // Replace 'Example' with 'LastName', keeping the quotes
 var IMAGE_NAME_SUFFIX = 'Example';
 
-// The number of the UIs you have (remember to count the first one, 00)
-// (This should be the highest # UI you have + 1)
+// The number of the UIs you have in your folder (remember to count 
+// the first one, 00) (This should be the highest # UI you have + 1)
 var NUM_UIS = 4;
