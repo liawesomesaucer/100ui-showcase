@@ -3,3 +3,37 @@
     padding-top: 4rem;
   }
 }
+
+.ui-card {
+  // background-color: $GRAY_LIGHT;
+  margin-bottom: 2rem;
+
+  &--wrapper {
+    vertical-align: bottom;
+
+    &.col-md-12 {
+      margin-bottom: 4rem;
+    }
+  }
+  &--img {
+    margin: auto;
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+  }
+  &--body {
+    padding: 1rem;
+    text-align: center;
+  }
+}
+
+.ui-view {
+  &--btn {
+    color: $GRAY_MED;
+    cursor: pointer;
+
+    &.active {
+      color: $GRAY_DARK;
+    }
+  }
+}
