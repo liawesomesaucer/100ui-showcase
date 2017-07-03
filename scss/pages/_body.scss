@@ -5,7 +5,6 @@
 }
 
 .ui-card {
-  // background-color: $GRAY_LIGHT;
   margin-bottom: 2rem;
 
   &--wrapper {
@@ -13,6 +12,12 @@
 
     &.col-md-12 {
       margin-bottom: 4rem;
+    }
+    &.col-md-4 {
+      img {
+        background-color: $GRAY_MED;
+        max-height: 30rem;
+      }
     }
   }
   &--img {
@@ -24,6 +29,9 @@
   &--body {
     padding: 1rem;
     text-align: center;
+  }
+  &--img-wrapper {
+    // background-color: $GRAY_MED;
   }
 }
 

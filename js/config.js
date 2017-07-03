@@ -3,7 +3,7 @@
  * what you're doing
  *
  * Note that this requires that your image files be in the format of
- * <Number>_<Suffix>.<ImageType> ie 00_Liaw.png, 01_Liaw.png
+ * <Number>_<Suffix>.<ImageType> ie 01_Liaw.png, 02_Liaw.png
  */
 
 // Replace with the image type of your UIs (what goes after the .)
@@ -14,5 +14,5 @@ var IMAGE_TYPE = 'png';
 var IMAGE_NAME_SUFFIX = 'Example';
 
 // The number of the UIs you have in your folder (remember to count 
-// the first one, 00) (This should be the highest # UI you have + 1)
-var NUM_UIS = 4;
+// the first one, 01) (This should be the highest # UI you have)
+var NUM_UIS = 5;

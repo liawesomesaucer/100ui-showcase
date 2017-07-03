@@ -22,10 +22,16 @@ function generateUIList() {
   var res = [];
 
   var uiStr = '';
-  for (var i = 0; i < NUM_UIS; i++) {
+  // Do 1 - 99
+  for (var i = 1; i < NUM_UIS; i++) {
     // Implicit type conversion used to stringify numberk
     uiStr = (i + '0').substring(0,2).split('').reverse().join('') + '_' + IMAGE_NAME_SUFFIX + '.' + IMAGE_TYPE;
     res.push(uiStr);
+  }
+
+  // Do 100th if needed
+  if (i === 100) {
+    res.push('100_' + IMAGE_NAME_SUFFIX + '.' + IMAGE_TYPE);
   }
 
   return res;
@@ -43,10 +49,11 @@ function prepRenderTiles(uiImageList, numColumns, btnId, btnClass) {
    */
   function generateTile(ui, i) {
     return '' +
-      // (i+1) used due to zero-based indexing
       '<div class="ui-card--wrapper col-md-' + colWidth + '" id="' + (i+1) + '">' +
         '<div class="ui-card card">' +
-          '<img class="ui-card--img card-img-top" src="images/uis/' + ui + '" />' +
+          '<div class="ui-card--img-wrapper">' +
+            '<img class="ui-card--img card-img-top" src="images/uis/' + ui + '" />' +
+          '</div>' +
           '<div class="ui-card--body card-body">' +
             '<p>Day ' + (i+1) + '</p>' +
           '</div>' +
