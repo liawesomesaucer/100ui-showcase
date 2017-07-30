@@ -2,9 +2,10 @@ $(document).ready(function() {
   var tileBtnId = '#ui-view-tiles';
   var listBtnId = '#ui-view-list';
   var btnClass = '.ui-view--btn';
+  var uiList = generateUIList();
 
-  var renderTiles = prepRenderTiles(generateUIList(), 3, tileBtnId, btnClass);
-  var renderList = prepRenderTiles(generateUIList(), 1, listBtnId, btnClass);
+  var renderTiles = prepRenderTiles(uiList, 3, tileBtnId, btnClass);
+  var renderList = prepRenderTiles(uiList, 1, listBtnId, btnClass);
 
   $(tileBtnId).click(renderTiles);
   $(listBtnId).click(renderList);
@@ -12,6 +13,7 @@ $(document).ready(function() {
   // Change to renderList() if you want a default one-column layout
   renderTiles();
 
+  // Text for 'And I’ve completed <NUM_UIS> days of the 100-day Daily UI Challenge'
   $('#ui-num-days').text(NUM_UIS);
 });
 
@@ -22,19 +24,27 @@ function generateUIList() {
   var res = [];
 
   var uiStr = '';
-  // Do 1 - 99
-  for (var i = 1; i < NUM_UIS; i++) {
-    // Implicit type conversion used to stringify numberk
-    uiStr = (i + '0').substring(0,2).split('').reverse().join('') + '_' + IMAGE_NAME_SUFFIX + '.' + IMAGE_TYPE;
+  // Do 1 - 99 (one-based indexing)
+  for (var i = 1; i < Math.min(NUM_UIS + 1, 99); i++) {
+    // Implicit type conversion used to stringify numbers
+    uiStr = generateUILink(i, IMAGE_NAME_SUFFIX, IMAGE_TYPE);
     res.push(uiStr);
   }
 
   // Do 100th if needed
-  if (i === 100) {
+  if (NUM_UIS === 100) {
     res.push('100_' + IMAGE_NAME_SUFFIX + '.' + IMAGE_TYPE);
   }
 
   return res;
+}
+
+/**
+ * Helper function returning link of a UI based on index and config
+ */
+function generateUILink(i, imageNameSuffix, imageType) {
+  return (i + '0').substring(0,2).split('').reverse().join('') +
+    '_' + imageNameSuffix + '.' + imageType;
 }
 
 /**

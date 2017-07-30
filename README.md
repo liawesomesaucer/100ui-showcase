@@ -14,7 +14,7 @@ Note that I'm not directly affiliated with the planning or running of the actual
 * Git installed locally
 * A folder with all your UIs, listed like `01_LastName.jpg`, `02_LastName.jpg`, .... `100_LastName.jpg`
 * Most common image types are supported. For speed purposes, it might help to have images that aren't too large (not greater than 1000 x 1000)
-  * It's ideal to keep the images in a consistent height:width ratio
+  * For best results, keep the images in a consistent height:width ratio. Dribbble forces you to do this too
 * 10-20 minutes
 
 ### Setup
@@ -66,4 +66,4 @@ Using gulp, so let's set that up.
 npm install
 gulp
 ```
-Now you can feel free to make any edits as needed.
+Now you feel free to make any edits as needed.
